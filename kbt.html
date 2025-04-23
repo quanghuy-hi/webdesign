@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bài tập</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #e6f4ff;
+      margin: 20px;
+    }
+    header {
+      text-align: center;
+      background-color: #8dd9f7;
+      padding: 20px 0;
+      border-radius: 5px;
+    }
+    header h1 {
+      margin: 0;
+      color: white;
+    }
+    .dropdown {
+      background-color: #8dd9f7;
+      padding: 10px;
+      margin-bottom: 20px;
+      border-radius: 5px;
+    }
+    .dropdown select {
+      width: 100%;
+      padding: 10px;
+      font-size: 1.2em;
+      border: 1px solid #ddd;
+      border-radius: 5px;
+    }
+    .section {
+      background-color: white;
+      padding: 20px;
+      margin-top: 20px;
+      border-radius: 12px;
+      width: 80%;
+      margin: 0 auto;
+    }
+    .section-title {
+      color: #4eccf2;
+      font-size: 1.5em;
+      font-weight: bold;
+      margin-bottom: 10px;
+    }
+    .accordion {
+      background-color: #f1f1f1;
+      border: none;
+      cursor: pointer;
+      padding: 10px;
+      width: 100%;
+      text-align: left;
+      border-radius: 5px;
+      margin-top: 5px;
+      font-size: 1.1em;
+    }
+    .accordion a{
+      color: black;
+      padding: 4px 0;
+      text-decoration: none;
+      display: block;
+      font-weight: bold;
+    }
+    .accordion:hover {
+      background-color: #ccc;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Bài tập</h1>
+  </header>
+
+  <div class="dropdown">
+    <label for="select-buoi">Chọn buổi:</label>
+    <select id="select-buoi">
+      <option value="all">Tất cả</option>
+      <option value="buoi1">Buổi 1</option>
+      <option value="buoi2">Buổi 2</option>
+      <option value="buoi4">Buổi 4</option>
+      <option value="buoi5">Buổi 5</option>
+      <option value="buoi6">Buổi 6</option>
+      <option value="buoi7">Buổi 7</option>
+      <option value="buoi8">Buổi 8</option>
+      <option value="buoi9">Buổi 9</option>
+    </select>
+  </div>
+
+  <div id="buoi1" class="section">
+    <div class="section-title">Bài tập Buổi 1</div>
+    <button class="accordion"><a href="bt1.html" target="_blank">Bài 1</a></button>
+    <button class="accordion"><a href="bt2.1.html" target="_blank">Bài 2.1</a></button>
+    <button class="accordion"><a href="bt2.2.html" target="_blank">Bài 2.2</a></button>
+    <button class="accordion"><a href="bt2.3.html" target="_blank">Bài 2.3</a></button>
+    <button class="accordion"><a href="bt3.html" target="_blank">Bài 3</a></button>
+  </div>
+
+  <div id="buoi2" class="section">
+    <div class="section-title">Bài tập Buổi 2</div>
+    <button class="accordion"><a href="bt1(b3).html" target="_blank">Bài 1</a></button>
+    <button class="accordion"><a href="bt2.1(b3).html" target="_blank">Bài 2.1</a></button>
+    <button class="accordion"><a href="bt2.2(b3).html" target="_blank">Bài 2.2</a></button>
+    <button class="accordion"><a href="bt2.3(b3).html" target="_blank">Bài 2.3</a></button>
+    </div>
+  </div>
+
+  <div id="buoi4" class="section">
+    <div class="section-title">Bài tập Buổi 4</div>
+    <button class="accordion"><a href="b1.1(b4).html" target="_blank">Bài 1.1</a></button>
+    <button class="accordion"><a href="b1.2(b4).html" target="_blank">Bài 1.2</a></button>
+    <button class="accordion"><a href="b2(b4).html" target="_blank">Bài 2</a></button>
+    <button class="accordion"><a href="b3.1(b4).html" target="_blank">Bài 3.1</a></button>
+    <button class="accordion"><a href="b3.2(b4).html" target="_blank">Bài 3.2</a></button>
+    <button class="accordion"><a href="b3.3(b4).html" target="_blank">Bài 3.3</a></button>
+  </div>
+
+  <div id="buoi5" class="section">
+    <div class="section-title">Bài tập Buổi 5</div>
+    <button class="accordion"><a href="menu ngang, dọc.html" target="_blank">Bài 1</a></button>
+  </div>
+
+  <div id="buoi6" class="section">
+    <div class="section-title">Bài tập Buổi 6</div>
+    <button class="accordion"><a href="b1(b6).html" target="_blank">Bài 1</a></button>
+    <button class="accordion"><a href="b2(b6).html" target="_blank">Bài 2</a></button>
+  </div>
+
+  <div id="buoi7" class="section">
+    <div class="section-title">Bài tập Buổi 7</div>
+    <button class="accordion"><a href="b1(b7).html" target="_blank">Bài 1</a></button>
+    <button class="accordion"><a href="b2(b7).html" target="_blank">Bài 2</a></button>
+    <button class="accordion"><a href="b3(b7).html" target="_blank">Bài 3</a></button>
+  </div>
+
+  <div id="buoi8" class="section">
+    <div class="section-title">Bài tập Buổi 8</div>
+    <button class="accordion"><a href="b1.1(b8).html" target="_blank">Bài 1(c1)</a></button>
+    <button class="accordion"><a href="b1.2(b8).html" target="_blank">Bài 1(c2)</a></button>
+    <button class="accordion"><a href="b2(b8).html" target="_blank">Bài 2</a></button>
+    <button class="accordion"><a href="b3(b8).html" target="_blank">Bài 3</a></button>
+  </div>
+
+  <div id="buoi9" class="section">
+    <div class="section-title">Bài tập Buổi 9</div>
+    <button class="accordion"><a href="b1(b9).html" target="_blank">Bài 1</a></button>
+    <button class="accordion"><a href="b2(b9).html" target="_blank">Bài 2</a></button>
+    <button class="accordion"><a href="b3.1(b9).html" target="_blank">Bài 3.1</a></button>
+    <button class="accordion"><a href="b3.2(b9).html" target="_blank">Bài 3.2</a></button>
+  </div>
+
+  <div id="buoi5" class="section">
+    <div class="section-title">Bài tập Buổi 10</div>
+    <button class="accordion"><a href="b1(b10).html" target="_blank">Bài 1</a></button>
+  </div>
+
+  <script>
+    document.getElementById('select-buoi').addEventListener('change', function() {
+      var selectedBuoi = this.value;
+      var allBuoi = document.querySelectorAll('.section');
+      allBuoi.forEach(function(buoi) {
+        buoi.style.display = 'none';
+      });
+      if (selectedBuoi === 'all') {
+        allBuoi.forEach(function(buoi) {
+          buoi.style.display = 'block';
+        });
+      } else {
+        document.getElementById(selectedBuoi).style.display = 'block';
+      }
+    });
+
+    // Mã để mở rộng các accordion
+    var acc = document.getElementsByClassName("accordion");
+    for (var i = 0; i < acc.length; i++) {
+      acc[i].addEventListener("click", function() {
+        this.classList.toggle("active");
+        var panel = this.nextElementSibling;
+        if (panel.style.display === "block") {
+          panel.style.display = "none";
+        } else {
+          panel.style.display = "block";
+        }
+      });
+    }
+  </script>
+</body>
+</html>

@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+  <body>
+    <h2>Add ảnh</h2>
+    <div id="bo"></div>
+    <button onclick="addnode_img();">Add Image</button>
+    <script>
+      function addnode_img() {
+        var pt = document.createElement('img');
+        pt.src = "https://static.lag.vn/upload/news/22/01/27/kimetsu-no-yaiba-vi-sao-zenitsu-manh-hon-khi-ngu-2_STFW.jpg?w=800&encoder=wic&subsampling=444";
+        document.getElementById("bo").appendChild(pt);
+      }
+    </script>
+  </body>
+</html>

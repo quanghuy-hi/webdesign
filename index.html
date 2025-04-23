@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Trang Web Cá Nhân</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 5px;
+      background-color: #e6f4ff;
+    }
+    header {
+      background-color: #8dd9f7;
+      text-align: center;
+      padding: 20px 0;
+      border-top-left-radius: 5px;
+    }
+    header h1 {
+      margin: 0;
+      color: white;
+      font-size: 2em;
+    }
+    nav {
+      display: flex;
+      justify-content: center;
+      background-color: #8dd9f7;
+      padding: 10px 0;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+      transition: all 0.3s ease;
+    }
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin: 0 15px;
+      font-weight: bold;
+      font-size: 1.2em;
+      transition: font-size 0.3s ease;
+    }
+    nav.nav-scrolled {
+      padding: 20px 0;
+    }
+    nav.nav-scrolled a {
+      font-size: 1.5em;
+    }
+    .section {
+      background-color: white;
+      width: 80%;
+      margin: 80px auto 20px auto;
+      padding: 30px;
+      border-radius: 12px;
+    }
+    .section-title {
+      color: #4eccf2;
+      font-size: 1.5em;
+      font-weight: bold;
+      margin-bottom: 20px;
+    }
+    .avatar {
+      width: 150px;
+      height: 150px;
+      border-radius: 10px;
+      object-fit: cover;
+      display: block;
+      margin: 65px 100px 20px 20px;
+      float: right;
+    }
+    .info p {
+      font-size: 1.1em;
+      line-height: 1.6;
+    }
+    .info strong {
+      font-weight: bold;
+    }
+    .bai-tap-list {
+      display: flex;
+      flex-direction: row;
+      gap: 10px;
+      width: 100%;
+      flex-wrap: wrap; 
+      justify-content: space-evenly;
+    }
+    .bai-tap-item {
+      background-color: #f2f2f2;
+      padding: 10px;
+      border-radius: 8px;
+      cursor: pointer;
+      display: flex;
+      justify-content: center;
+      align-items: center; 
+      width: 100px;
+      transition: background-color 0.3s ease;
+      position: relative;
+      text-align: center;
+      padding-top: 22px;
+    }
+    .bai-tap-item:hover {
+      background-color: #8dd9f7;
+      display: block;
+    }
+    .bai-tap-item a {
+      color: black;
+      padding: 5px 0;
+      text-decoration: none;
+      display: block;
+      font-weight: bold;
+      font-size: 18px;
+    }
+    .bai-tap-list-container {
+      position: relative;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Chào mừng đến với trang cá nhân của tôi!</h1>
+  </header>
+  <nav>
+    <a href="#gioi-thieu">Giới thiệu</a>
+    <a href="#bai-tap">Bài tập</a>
+    <a href="#lien-he">Liên hệ</a>
+  </nav>
+
+  <div class="section" id="gioi-thieu">
+    <div class="section-title">Giới thiệu</div>
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSdDLc6hRc5H8RwMKxm7p26O3drhJIFfbeOgw&s" alt="Ảnh đại diện" class="avatar" />
+    <div class="info">
+      <p><strong>Họ tên:</strong> Đoàn Quang Huy</p>
+      <p><strong>Ngày sinh:</strong> 08/05/2006</p>
+      <p><strong>Quê quán:</strong> Hòa Bình</p>
+      <p><strong>Trình độ học vấn:</strong> Đại học</p>
+      <p><strong>Ngành học:</strong> Công nghệ thông tin</p>
+      <p><strong>Lớp:</strong> CNTT D2024A</p>
+      <p><strong>Sở thích:</strong> Ngủ, chơi game, nghe nhạc, xem phim</p>
+    </div>
+  </div>
+
+  <div class="section" id="bai-tap">
+    <div class="section-title">Bài tập</div>
+    <div class="bai-tap-list">
+      <div class="bai-tap-list-container">
+        <div class="bai-tap-item">
+          <a href="kbt.html" target="_blank">Bài tập</p></a>
+        </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="section" id="lien-he">
+    <div class="section-title">Liên hệ</div>
+    <div class="info">
+      <p><strong>Email:</strong> quanghuyhq06@gmail.com</p>
+      <p><strong>Điện thoại:</strong> 0912846777</p>
+    </div>
+  </div>
+
+  <script>
+    window.addEventListener('scroll', function () {
+      const nav = document.querySelector('nav');
+      if (window.scrollY > 10) {
+        nav.classList.add('nav-scrolled');
+      } else {
+        nav.classList.remove('nav-scrolled');
+      }
+    });
+  </script>
+</body>
+</html>

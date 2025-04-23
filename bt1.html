@@ -1,0 +1,583 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bai 1</title>
+</head>
+
+<h1>HTML Basic</h1>
+<p>K/n: Tất cả tài liệu HTML phải bắt đầu bằng khai báo loại tài liệu: < !DOCTYPE html >.
+Bản thân tài liệu HTML bắt đầu bằng < html >và kết thúc bằng < /html >.
+Phần hiển thị của tài liệu HTML nằm giữa < body >và < /body >.</p>
+<p>Ví dụ:</p>
+<p>< !DOCTYPE html ></p>
+<p>< html ></p>
+<p>< body ></p>
+<p>< h1 >My Student code< /h1 ></p>
+<p>< p >224001796.< /p ></p>
+<p>< /body ></p>
+<p>< /html ></p>
+
+<h1>HTML Elements</h1>
+<p>K/n: Phần tử HTML bao gồm mọi thứ từ thẻ bắt đầu đến thẻ kết thúc:
+< tagname > Nội dung ở đây ... < /tagname >.</p>
+<p>Ví dụ:</p>
+<p>< h1 > Tiêu đề đầu tiên của tôi < /h1 ></p>
+<p>< p > Đoạn văn đầu tiên của tôi. < / p ></p>
+
+<h1>HTML Attributes</h1>
+<p>- Tất cả các phần tử HTML có thể có các thuộc tính.</p>
+<p>- Thuộc tính cung cấp thông tin bổ sung về các thành phần.</p>
+<p>- Thuộc tính luôn được chỉ định trong thẻ bắt đầu.</p>
+<p>- Thuộc tính thường có cặp tên/giá trị như: name="value".</p>
+
+<h3>Thuộc tính href</h3>
+<p>Thẻ < a >định nghĩa một siêu liên kết. href Thuộc tính chỉ định URL của trang mà liên kết dẫn đến:</p>
+<p>< a href="https://www.w3schools.com">Visit W3Schools< /a >.</p>
+
+<h3>Thuộc tính src</h3>
+<p>Thẻ < img >được sử dụng để nhúng hình ảnh vào trang HTML. src Thuộc tính chỉ định đường dẫn đến hình ảnh sẽ được hiển thị:</p>
+<p>< img src="img_girl.jpg" >.</p>
+
+<h3>Thuộc tính chiều rộng và chiều cao</h3>
+<p>Thẻ này < img >cũng phải chứa các thuộc tính widthvà heightđể chỉ định chiều rộng và chiều cao của hình ảnh (tính bằng pixel):</p>
+<p>< img src="img_girl.jpg" width="500" height="600" >.</p>
+
+<h3>Thuộc tính alt</h3>
+<p>Thuộc tính bắt buộc altcho < img > thẻ chỉ định văn bản thay thế cho hình ảnh, nếu hình ảnh không thể hiển thị vì lý do nào đó.
+Điều này có thể do kết nối chậm, lỗi trong srcthuộc tính hoặc nếu người dùng sử dụng trình đọc màn hình.</p>
+<p>< img src="img_girl.jpg" alt="Girl with a jacket" >.</p>
+
+<h1>HTML Headings</h1>
+<p>Tiêu đề HTML được định nghĩa bằng thẻ < h1 > đến < h6 >.</p>
+<p>< h1 >định nghĩa tiêu đề quan trọng nhất. 
+< h6 >định nghĩa tiêu đề ít quan trọng nhất.</p>
+<p>Ví dụ:</p>
+<p>< h1 >Heading 1< /h1 >.</p>
+<p>< h2 >Heading 2< /h2 >.</p>
+<p>< h3 >Heading 3< /h3 >.</p>
+<p>< h4 >Heading 4< /h4 >.</p>
+<p>< h5 >Heading 5< /h5 >.</p>
+<p>< h6 >Heading 6< /h6 >.</p>
+
+<h1>HTML Paragraphs</h1>
+<p>Phần tử HTML < p >xác định một đoạn văn.
+Một đoạn văn luôn bắt đầu ở một dòng mới và trình duyệt sẽ tự động thêm một khoảng trắng (lề) trước và sau một đoạn văn.</p>
+<p>Ví dụ:</p>
+<p>< p >This is a paragraph.< /p >.</p>
+<p>< p >This is another paragraph.< /p >.</p>
+
+<h1>HTML Styles</h1>
+<p>Thuộc tính HTML style được sử dụng để thêm kiểu cho một phần tử, chẳng hạn như màu sắc, phông chữ, kích thước, v.v.</p>
+<p>I am normal</p>
+<p style="color:red;">I am red</p>
+<p style="color:blue;">I am blue</p>
+<p style="font-size:35px;">I am big</p>
+
+<h1>HTML Formatting</h1>
+<p>HTML chứa một số phần tử để xác định văn bản có ý nghĩa đặc biệt.</p>
+<p>Ví dụ:</p>
+<p>< b >This text is bold< /b ></p>
+<p>< i >This text is italic< /i ></p>
+<p>This is< sub > subscript< /sub > and < sup >superscript< /sup ></p>
+
+<h3>Các thành phần định dạng HTML:</h3>
+<p>< b > - Văn bản in đậm.</p>
+<p>< strong > - Văn bản quan trọng.</p>
+<p>< i > - Văn bản in nghiêng.</p>
+<p>< em > - Văn bản được nhấn mạnh.</p>
+<p>< mark > - Văn bản được đánh dấu.</p>
+<p>< small > - Văn bản nhỏ hơn.</p>
+<p>< del > - Văn bản đã xóa.</p>
+<p>< ins > - Đã chèn văn bản.</p>
+<p>< sub > - Văn bản chỉ số dưới.</p>
+<p>< sup > - Văn bản chữ mũ.</p>
+
+<h1>HTML Quotations</h1>
+<p>Trong chương này chúng ta sẽ tìm hiểu về các phần tử < blockquote >, < q >, < abbr >, < address >, < cite >, và < bdo >HTML.</p>
+
+<h3>HTML < blockquote > cho trích dẫn</h3>
+<p>Phần tử HTML < blockquote >định nghĩa một phần được trích dẫn từ một nguồn khác.
+Trình duyệt thường thụt lề < blockquote >các phần tử.</p>
+<p>Ví dụ:</p>
+<p>Here is a quote from WWF's website:</p>
+<blockquote cite="http://www.worldwildlife.org/who/index.html">
+For 60 years, WWF has worked to help people and nature thrive. As the world's leading conservation organization, WWF works in nearly 100 countries. At every level, we collaborate with people around the world to develop and deliver innovative solutions that protect communities, wildlife, and the places in which they live.
+</blockquote>
+
+<h3>HTML < q > cho trích dẫn ngắn</h3>
+<p>Thẻ HTML < q >định nghĩa một đoạn trích dẫn ngắn.
+Trình duyệt thường chèn dấu ngoặc kép vào phần trích dẫn.</p>
+<p>Ví dụ:</p>
+<p>Browsers usually insert quotation marks around the q element.</p>
+<p>WWF's goal is to: <q>Build a future where people live in harmony with nature.</q></p>
+
+<h3>HTML <abbr> cho Viết tắt</h3>
+<p>Thẻ HTML <abbr>định nghĩa một từ viết tắt hoặc từ viết tắt, như "HTML", "CSS", "Mr.", "Dr.", "ASAP", "ATM".
+Đánh dấu các chữ viết tắt có thể cung cấp thông tin hữu ích cho trình duyệt, hệ thống dịch thuật và công cụ tìm kiếm.</p>
+<p>Mẹo: Sử dụng thuộc tính tiêu đề chung để hiển thị mô tả cho từ viết tắt khi bạn di chuột qua phần tử.</p>
+<p>Ví dụ:</p>
+<p>The <abbr title="World Health Organization">WHO</abbr> was founded in 1948.</p>
+<p>Marking up abbreviations can give useful information to browsers, translation systems and search-engines.</p>
+ <h3>HTML < address > cho Thông tin liên lạc</h3>
+<p>Thẻ HTML < address > xác định thông tin liên hệ của tác giả/chủ sở hữu của một tài liệu hoặc bài viết.
+Thông tin liên lạc có thể là địa chỉ email, URL, địa chỉ thực, số điện thoại, tên người dùng trên mạng xã hội, v.v.
+Văn bản trong < address > phần tử thường được hiển thị nghiêng và trình duyệt sẽ luôn thêm ngắt dòng trước và sau < address > phần tử.
+</p>
+<p>Ví dụ:</p>
+<p>The HTML address element defines contact information (author/owner) of a document or article.</p>
+<address>
+Written by John Doe.<br> 
+Visit us at:<br>
+Example.com<br>
+Box 564, Disneyland<br>
+USA
+</address>
+
+<h3>HTML < cite > cho Tiêu đề tác phẩm</h3>
+<p>Thẻ HTML < cite > xác định tiêu đề của một tác phẩm sáng tạo (ví dụ: một cuốn sách, một bài thơ, một bài hát, một bộ phim, một bức tranh, một tác phẩm điêu khắc, v.v.).
+</p>
+<p>Lưu ý: Tên của một người không phải là tên của một tác phẩm.
+Văn bản trong < cite > phần tử thường được hiển thị theo dạng in nghiêng.</p>
+<p>Ví dụ:</p>
+<p>The HTML cite element defines the title of a work.</p>
+<p>Browsers usually display cite elements in italic.</p>
+<img src="img_the_scream.jpg" width="220" height="277" alt="The Scream">
+<p><cite>The Scream</cite> by Edvard Munch. Painted in 1893.</p>
+
+<h3>HTML < bdo > để ghi đè hai chiều</h3>
+<p>BDO là viết tắt của Bi-Directional Override.
+Thẻ HTML < bdo > được sử dụng để ghi đè hướng văn bản hiện tại.</p>
+<p>Ví dụ:</p>
+<p>If your browser supports bi-directional override (bdo), the next line will be written from right to left (rtl):</p>
+<bdo dir="rtl">This line will be written from right to left</bdo>
+
+<h1>HTML Comments</h1>
+<p>Bình luận HTML không được hiển thị trên trình duyệt, nhưng chúng có thể giúp ghi lại tài liệu về mã nguồn HTML của bạn.</p>
+
+<h3>HTML Comment Tag</h3>
+<p>Bạn có thể thêm bình luận vào nguồn HTML của mình bằng cách sử dụng cú pháp sau:</p>
+<p><!-- Write your comments here --></p>
+<p>Lưu ý rằng có dấu chấm than (!) ở thẻ bắt đầu nhưng không có ở thẻ kết thúc.</p>
+
+<h3>Add Comments</h3>
+<p>Với bình luận, bạn có thể đặt thông báo và lời nhắc trong mã HTML của mình:</p>
+<p>Ví dụ:</p>
+<p>< !-- This is a comment -- ></p>
+<p>< p >This is a paragraph.< /p ></p>
+<p>< !-- Comments are not displayed in the browser -- ></p>
+
+<h3>Hide Content</h3>
+<p>Có thể sử dụng bình luận để ẩn nội dung.
+Điều này có thể hữu ích nếu bạn tạm thời ẩn nội dung:</p>
+<p>Ví dụ:</p>
+<p>< p >This is a paragraph.< /p ></p>
+<p>< !-- < p >This is another paragraph < /p > -- ></p>
+<p>< p >This is a paragraph too.< /p ></p>
+<p> </p>
+<p>Bạn cũng có thể ẩn nhiều hơn một dòng. Mọi thứ giữa <!--và --> sẽ được ẩn khỏi màn hình.</p>
+<p>Ví dụ:</p>
+<p>< p >This is a paragraph.< /p ></p>
+<p>< !--
+<p>Look at this cool image:</p>
+<img border="0" src="pic_trulli.jpg" alt="Trulli">
+-- ></p>
+<p>< p >This is a paragraph too.< /p ></p>
+
+<h3>Hide Inline Content</h3>
+<p>Có thể sử dụng bình luận để ẩn các phần ở giữa mã HTML.</p>
+<p>Ví dụ:</p>
+<p>< p >This <!-- great text --> is a paragraph.< /p ></p>
+
+<h1>HTML Colors</h1>
+<p>Màu HTML được chỉ định bằng tên màu được xác định trước hoặc bằng giá trị RGB, HEX, HSL, RGBA hoặc HSLA.</p>
+
+<h3 style="background-color:DodgerBlue;">Background Color</h3>
+<p>Ví dụ:</p>
+<p>< h1 style="background-color:DodgerBlue;" >Hello World</h1 ></p>
+
+<h3 style="color:Tomato;">Text Color</h3>
+<p>Ví dụ:</p>
+<p>< h1 style="color:Tomato;" >Hello World< /h1></p>
+
+<h3 style="border:2px solid Orange;">Border Color</h3>
+<p>Ví dụ:</p>
+<p>< h1 style="border:2px solid Tomato;" >Hello World< /h1></p>
+
+<h1>HTML Links</h1>
+<p>Liên kết HTML là siêu liên kết.
+
+Bạn có thể nhấp vào liên kết và chuyển đến tài liệu khác.
+
+Khi bạn di chuyển chuột qua một liên kết, mũi tên chuột sẽ biến thành hình bàn tay nhỏ.</p>
+<p>Thẻ HTML <a>định nghĩa một siêu liên kết. Nó có cú pháp sau:</p>
+<p><a href="url">link text</a></p>
+<p>Ví dụ:</p>
+<p><a href="https://www.w3schools.com/">Visit W3Schools.com!</a></p>
+
+<h1>HTML Images</h1>
+<p>Hình ảnh có thể cải thiện thiết kế và giao diện của trang web.</p>
+<p>Cú pháp:</p>
+<p><img src="url" alt="alternatetext"></p>
+<p>Ví dụ:</p>
+<p>< img src="pic_trulli.jpg" alt="Italian Trulli" ></p>
+<p><img src="pic_trulli.jpg" alt="Italian Trulli"></p>
+
+<h1>HTML Tables</h1>
+<p>Bảng HTML cho phép các nhà phát triển web sắp xếp dữ liệu thành các hàng và cột.</p>
+<head>
+<style>
+table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+td, th {
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 8px;
+}
+
+tr:nth-child(even) {
+  background-color: #dddddd;
+}
+</style>
+</head>
+<body>
+
+<h4>HTML Table</h4>
+
+<table>
+  <tr>
+    <th>Company</th>
+    <th>Contact</th>
+    <th>Country</th>
+  </tr>
+  <tr>
+    <td>Alfreds Futterkiste</td>
+    <td>Maria Anders</td>
+    <td>Germany</td>
+  </tr>
+  <tr>
+    <td>Centro comercial Moctezuma</td>
+    <td>Francisco Chang</td>
+    <td>Mexico</td>
+  </tr>
+  <tr>
+    <td>Ernst Handel</td>
+    <td>Roland Mendel</td>
+    <td>Austria</td>
+  </tr>
+  <tr>
+    <td>Island Trading</td>
+    <td>Helen Bennett</td>
+    <td>UK</td>
+  </tr>
+  <tr>
+    <td>Laughing Bacchus Winecellars</td>
+    <td>Yoshi Tannamuri</td>
+    <td>Canada</td>
+  </tr>
+  <tr>
+    <td>Magazzini Alimentari Riuniti</td>
+    <td>Giovanni Rovelli</td>
+    <td>Italy</td>
+  </tr>
+</table>
+
+<h2>Đường viền bảng thu gọn</h2>
+<p>Ví dụ:</p>
+<head>
+<style>
+table, th, td {
+  border: 1px solid black;
+  border-collapse: collapse;
+}
+</style>
+</head>
+<body>
+
+<h4>Đường viền bị thu gọn</h4>
+<p>Nếu bạn muốn các đường viền thu gọn lại thành một đường viền duy nhất, hãy thêm thuộc tính border-collapse của CSS.</p>
+
+<table style="width:100%">
+  <tr>
+    <th>Firstname</th>
+    <th>Lastname</th> 
+    <th>Age</th>
+  </tr>
+  <tr>
+    <td>Jill</td>
+    <td>Smith</td>
+    <td>50</td>
+  </tr>
+  <tr>
+    <td>Eve</td>
+    <td>Jackson</td>
+    <td>94</td>
+  </tr>
+  <tr>
+    <td>John</td>
+    <td>Doe</td>
+    <td>80</td>
+  </tr>
+</table>
+
+<h2>Kích thước bảng HTML</h2>
+<h3>Chiều rộng bảng HTML</h3>
+<p>Ví dụ:</p>
+<style>
+table, th, td {
+  border:1px solid black;
+  border-collapse: collapse;
+}
+</style>
+
+<body>
+
+<h4>Bảng HTML rộng 100%</h4>
+
+<table style="width:100%">
+  <tr>
+    <th>Firstname</th>
+    <th>Lastname</th> 
+    <th>Age</th>
+  </tr>
+  <tr>
+    <td>Jill</td>
+    <td>Smith</td>
+    <td>50</td>
+  </tr>
+  <tr>
+    <td>Eve</td>
+    <td>Jackson</td>
+    <td>94</td>
+  </tr>
+  <tr>
+    <td>John</td>
+    <td>Doe</td>
+    <td>80</td>
+  </tr>
+</table>
+
+<h3>Chiều rộng cột của bảng HTML</h3>
+<p>Ví dụ:</p>
+<style>
+table, th, td {
+  border:1px solid black;
+  border-collapse: collapse;
+}
+</style>
+<body>
+
+<h4>Đặt cột đầu tiên thành 70% chiều rộng của bảng</h4>
+
+<table style="width:100%">
+  <tr>
+    <th style="width:70%">Firstname</th>
+    <th>Lastname</th> 
+    <th>Age</th>
+  </tr>
+  <tr>
+    <td>Jill</td>
+    <td>Smith</td>
+    <td>50</td>
+  </tr>
+  <tr>
+    <td>Eve</td>
+    <td>Jackson</td>
+    <td>94</td>
+  </tr>
+  <tr>
+    <td>John</td>
+    <td>Doe</td>
+    <td>80</td>
+  </tr>
+</table>
+
+<h3>Chiều cao hàng của bảng HTML</h3>
+<p>Ví dụ:</p>
+<style>
+table, th, td {
+  border:1px solid black;
+  border-collapse: collapse;
+}
+</style>
+<body>
+
+<h4>Đặt chiều cao của hàng thứ hai là 200 pixel</h4>
+
+<table style="width:100%">
+  <tr>
+    <th>Firstname</th>
+    <th>Lastname</th> 
+    <th>Age</th>
+  </tr>
+  <tr style="height:200px">
+    <td>Jill</td>
+    <td>Smith</td>
+    <td>50</td>
+  </tr>
+  <tr>
+    <td>Eve</td>
+    <td>Jackson</td>
+    <td>94</td>
+  </tr>
+  <tr>
+    <td>John</td>
+    <td>Doe</td>
+    <td>80</td>
+  </tr>
+</table>
+
+<h2>Tiêu đề bảng HTML</h2>
+<p>Tiêu đề bảng được định nghĩa bằng th các phần tử. Mỗi th phần tử đại diện cho một ô bảng.</p>
+<p>Ví dụ:</p>
+<head>
+<style>
+table, th, td {
+  border: 1px solid black;
+  border-collapse: collapse;
+}
+</style>
+</head>
+<body>
+
+<h4>Tiêu đề bảng</h4>
+
+<p>Sử dụng phần tử TH để xác định tiêu đề bảng.</p>
+
+<table style="width:100%">
+  <tr>
+    <th>Firstname</th>
+    <th>Lastname</th>
+    <th>Age</th>
+  </tr>
+  <tr>
+    <td>Jill</td>
+    <td>Smith</td>
+    <td>50</td>
+  </tr>
+  <tr>
+    <td>Eve</td>
+    <td>Jackson</td>
+    <td>94</td>
+  </tr>
+</table>
+
+<h3>Tiêu đề bảng dọc</h3>
+<p>Ví dụ:</p>
+<head>
+<style>
+table, th, td {
+  border: 1px solid black;
+  border-collapse: collapse;
+}
+</style>
+</head>
+<body>
+
+<h4>Tiêu đề bảng dọc</h4>
+
+<p>Cột đầu tiên sẽ trở thành tiêu đề bảng nếu bạn đặt ô đầu tiên trong mỗi hàng của bảng thành phần tử TH:</p>
+
+<table style="width:100%">
+  <tr>
+    <th>Firstname</th>
+    <td>Jill</td>
+    <td>Eve</td>
+  </tr>
+  <tr>
+    <th>Lastname</th>
+    <td>Smith</td>
+    <td>Jackson</td>
+  </tr>
+  <tr>
+    <th>Age</th>  
+    <td>50</td>
+    <td>94</td>
+  </tr>
+</table>
+ <h1>HTML Lists</h1>
+<p>Danh sách HTML cho phép các nhà phát triển web nhóm một tập hợp các mục có liên quan vào danh sách.</p>
+
+<h3>Danh sách HTML không có thứ tự</h3>
+<p>Danh sách không có thứ tự bắt đầu bằng < ul > thẻ. Mỗi mục danh sách bắt đầu bằng < li > thẻ.
+Theo mặc định, các mục trong danh sách sẽ được đánh dấu bằng dấu đầu dòng (vòng tròn đen nhỏ):</p>
+<p>Ví dụ:</p>
+<h4>Một danh sách HTML không có thứ tự</h4>
+
+<ul>
+  <li>Coffee</li>
+  <li>Tea</li>
+  <li>Milk</li>
+</ul>  
+
+<h3>Danh sách HTML có thứ tự</h3>
+<p>Danh sách có thứ tự bắt đầu bằng < ol > thẻ. Mỗi mục danh sách bắt đầu bằng < li > thẻ.
+Theo mặc định, các mục trong danh sách sẽ được đánh dấu bằng số:</p>
+<p>Ví dụ:</p>
+<h4>Một danh sách HTML được sắp xếp</h4>
+
+<ol>
+  <li>Coffee</li>
+  <li>Tea</li>
+  <li>Milk</li>
+</ol>
+
+<h3>Danh sách mô tả HTML</h3>
+<p>HTML cũng hỗ trợ danh sách mô tả.
+Danh sách mô tả là danh sách các thuật ngữ, kèm theo mô tả cho từng thuật ngữ.
+Thẻ < dl > xác định danh sách mô tả, <dt>thẻ xác định thuật ngữ (tên) và < dd > thẻ mô tả từng thuật ngữ:</p>
+<p>Ví dụ:</p>
+<h4>Một danh sách mô tả</h4>
+
+<dl>
+  <dt>Cà phê</dt>
+  <dd>- Đồ uống nóng đen</dd>
+  <dt>Sữa</dt>
+  <dd>- Đồ uống lạnh màu trắng</dd>
+</dl>
+
+<h1>HTML Block and Inline Elements</h1>
+<p>Mỗi phần tử HTML đều có giá trị hiển thị mặc định, tùy thuộc vào loại phần tử đó.
+Hai giá trị hiển thị phổ biến nhất là khối và nội tuyến.</p>
+
+<h3>Block-level Elements</h3>
+<p>Một phần tử cấp khối luôn bắt đầu ở một dòng mới và trình duyệt sẽ tự động thêm một khoảng cách (lề) trước và sau phần tử.
+Một phần tử khối luôn chiếm toàn bộ chiều rộng có sẵn (kéo dài sang trái và phải xa nhất có thể).
+Hai phần tử khối thường được sử dụng là: < p > và < div >.</p>
+<p>Phần tử này <p>xác định một đoạn văn trong tài liệu HTML.</p>
+<p>Phần tử này < div > xác định một phân vùng hoặc một phần trong tài liệu HTML.</p>
+<p>Ví dụ:</p>
+<p style="border: 1px solid black">Hello World</p>
+<div style="border: 1px solid black">Hello World</div>
+
+<p>Các phần tử P và DIV đều là các phần tử khối và chúng sẽ luôn bắt đầu trên một dòng mới và chiếm toàn bộ chiều rộng có sẵn (kéo dài sang trái và phải xa nhất có thể).</p>
+
+<h3>Inline Elements</h3>
+<p>Một phần tử nội tuyến không bắt đầu ở một dòng mới.
+Một phần tử nội tuyến chỉ chiếm một độ rộng cần thiết.
+Đây là phần tử < span > bên trong một đoạn văn.</p>
+<p>Ví dụ:</p>
+<p>Đây là phần tử <span style="border: 1px solid black">Hello World</span> dạng span nội tuyến bên trong một đoạn văn.</p>
+
+<p>Phần tử SPAN là phần tử nội tuyến, không bắt đầu trên một dòng mới và chỉ chiếm độ rộng cần thiết.</p>
+ 
+<table>
+    <tr>
+      <td id="td1"></td>
+      <td><a href="bt2.1.html" > Bài 2.1</a></td>
+      <td><a href="bt2.2.html" > Bài 2.2</a></td>
+      <td><a href="bt2.3.html" > Bài 2.3</a></td>
+      <td><a href="bt3.html">Bài 3</a></td>
+      <td><a href="bt4.html">Bài 4</a></td>
+      <td></td>
+    </tr>
+  </table>
+
+
+</body>
+</html>

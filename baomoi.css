@@ -1,0 +1,111 @@
+.he{
+    ul {
+        list-style-type: none;
+        margin: 0;
+        padding-left: 180px;
+        overflow: hidden;
+        background-color: #17a2b8;
+        font-family: Arial, sans-serif;
+      }
+      li {
+        float: left;
+      }
+      li a {
+        display: block;
+        color: white;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+        border-left: 0.1px solid #d4d4d4c5;
+      }
+      li a.active {
+        background-color: #168ea0;
+        color: white;
+      }
+      li a:hover {
+        background-color: #237683;
+      }
+      li.rounded a {
+        border: 1px solid white;
+        border-radius: 15px;
+        padding: 4px 8px;  
+        font-size: 12px; 
+        background-color: #17a2b8;
+        transition: 0.3s;
+        margin-top: 10px;
+        margin-left: 10px;
+        align-items: center;
+      }
+      li.rounded a:hover {
+        background-color:rgba(255, 255, 255, 0.2);
+        color: white;
+    }
+}
+.no{
+    position: absolute;
+    top: 12%;
+    left: 10.2%;
+    right: 37.3%;
+    text-align: left;
+    font-family: Arial, sans-serif;
+    padding-left: 50px;
+}
+.image-container {
+    width: auto;
+    overflow: hidden;
+}
+
+.image-container img {
+    width: 100%;
+    transition: transform 0.3s ease;
+}
+
+.image-container:hover img {
+    transform: scale(1.2);
+}
+img{
+    border-radius: 5px;
+    float: left;
+    margin-right: 10px;
+    margin-bottom: 10px;
+}
+.container {
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.header {
+    font-size: 30px;
+    padding-left: 20px;
+}
+.body1 {
+    display: flex;
+    justify-content: space-between;
+}
+.col {
+    width: 30%;
+    height: 350px;
+    padding-right: 20px;
+    padding-top: 10px;
+}
+@media(max-width:600px){
+    .body1{
+        flex-direction: column;
+    }
+    .col{
+        width: 100%;
+    }
+}
+.no1{
+    position: absolute;
+    top: 10%;
+    left: 60%;
+    right: 10%;
+    text-align: left;
+    font-family: Arial, sans-serif;
+    padding-left: 50px;
+}
+#p{
+    padding-bottom: 20px;
+    border-bottom: 1px solid #d4d4d4c5;
+    font-size: 19px;
+}

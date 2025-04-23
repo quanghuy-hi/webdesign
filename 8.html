@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+  <body>
+    <h2>Thêm node ở vị trí xác định: before</h2>
+    <div id="container">
+      <p id="p1">xin chào</p>
+      <p id="p2">gì hết!</p>
+    </div>
+    <button onclick="addnode()">Add Node</button>
+    <script>
+      function addnode() {
+        var x = document.createElement('p');
+        x.className = "p3";
+        x.innerText = "không biết";
+        var cha = document.getElementById('container');
+        var y = document.getElementById('p2');
+        cha.insertBefore(x, y);
+      }
+    </script>
+  </body>
+</html>

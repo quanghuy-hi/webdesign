@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <title>Phép Toán và Đổi Màu</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      padding: 20px;
+    }
+    table {
+      border-collapse: collapse;
+    }
+    td {
+      padding: 8px;
+    }
+    input[type="text"], input[type="number"] {
+      width: 60px;
+      text-align: center;
+    }
+    .pheptoan span {
+      display: block;
+      margin-bottom: 5px;
+    }
+    .red { color: red; }
+    .black { color: black; }
+  </style>
+</head>
+<body>
+<h2>Các phép toán</h2>
+
+<table>
+  <tr>
+    <td>Phép cộng</td>
+    <td><input id="cong1" type="number"></td>
+    <td>+</td>
+    <td><input id="cong2" type="number"></td>
+    <td>=</td>
+    <td><input id="ketquaCong" type="text" readonly></td>
+  </tr>
+  <tr>
+    <td>Phép trừ</td>
+    <td><input id="tru1" type="number"></td>
+    <td>-</td>
+    <td><input id="tru2" type="number"></td>
+    <td>=</td>
+    <td><input id="ketquaTru" type="text" readonly></td>
+  </tr>
+  <tr>
+    <td>Phép nhân</td>
+    <td><input id="nhan1" type="number"></td>
+    <td>*</td>
+    <td><input id="nhan2" type="number"></td>
+    <td>=</td>
+    <td><input id="ketquaNhan" type="text" readonly></td>
+  </tr>
+  <tr>
+    <td>Phép chia</td>
+    <td><input id="chia1" type="number"></td>
+    <td>/</td>
+    <td><input id="chia2" type="number"></td>
+    <td>=</td>
+    <td><input id="ketquaChia" type="text" readonly></td>
+  </tr>
+</table>
+
+<br>
+<button onclick="tinhToan()">Thực hiện phép toán</button>
+
+<h3>Các phép toán vừa thực hiện</h3>
+<div class="pheptoan result">
+  <span id="ptCong" class="black"></span>
+  <span id="ptTru" class="black"></span>
+  <span id="ptNhan" class="black"></span>
+  <span id="ptChia" class="black"></span>
+</div>
+
+<script>
+  function tinhToan() {
+    // Lấy giá trị nhập vào
+    let a = document.getElementById("cong1").value;
+    let b = document.getElementById("cong2").value;
+    let c = document.getElementById("tru1").value;
+    let d = document.getElementById("tru2").value;
+    let e = document.getElementById("nhan1").value;
+    let f = document.getElementById("nhan2").value;
+    let g = document.getElementById("chia1").value;
+    let h = document.getElementById("chia2").value;
+
+    // Cộng
+    if (a !== "" && b !== "") {
+      let tong = parseFloat(a) + parseFloat(b);
+      document.getElementById("ketquaCong").value = tong;
+      document.getElementById("ptCong").textContent = `PHÉP CỘNG ${a} + ${b} = ${tong}`;
+      document.getElementById("ptCong").className = "red";
+    } else {
+      document.getElementById("ptCong").textContent = "";
+      document.getElementById("ptCong").className = "black";
+    }
+
+    // Trừ
+    if (c !== "" && d !== "") {
+      let hieu = parseFloat(c) - parseFloat(d);
+      document.getElementById("ketquaTru").value = hieu;
+      document.getElementById("ptTru").textContent = `PHÉP TRỪ ${c} - ${d} = ${hieu}`;
+      document.getElementById("ptTru").className = "red";
+    } else {
+      document.getElementById("ptTru").textContent = "";
+      document.getElementById("ptTru").className = "black";
+    }
+
+    // Nhân
+    if (e !== "" && f !== "") {
+      let tich = parseFloat(e) * parseFloat(f);
+      document.getElementById("ketquaNhan").value = tich;
+      document.getElementById("ptNhan").textContent = `PHÉP NHÂN ${e} * ${f} = ${tich}`;
+      document.getElementById("ptNhan").className = "red";
+    } else {
+      document.getElementById("ptNhan").textContent = "";
+      document.getElementById("ptNhan").className = "black";
+    }
+
+    // Chia
+    if (g !== "" && h !== "") {
+      if (parseFloat(h) !== 0) {
+        let thuong = (parseFloat(g) / parseFloat(h)).toFixed(2);
+        document.getElementById("ketquaChia").value = thuong;
+        document.getElementById("ptChia").textContent = `PHÉP CHIA ${g} / ${h} = ${thuong}`;
+        document.getElementById("ptChia").className = "red";
+      } else {
+        document.getElementById("ketquaChia").value = "Không chia được";
+        document.getElementById("ptChia").textContent = `PHÉP CHIA ${g} / ${h} = Không chia được`;
+        document.getElementById("ptChia").className = "red";
+      }
+    } else {
+      document.getElementById("ptChia").textContent = "";
+      document.getElementById("ptChia").className = "black";
+    }
+  }
+</script>
+</body>
+</html>
